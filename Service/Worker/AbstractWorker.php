@@ -106,4 +106,14 @@ abstract class AbstractWorker
     {
         return $this->error;
     }
+
+    /**
+     * Set error message if necessary for current worker.
+     *
+     * @param $error
+     */
+    public function setError($error)
+    {
+        $this->error = $error;
+    }
 }
